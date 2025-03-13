@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){    
-    char Estado1[2], CodCidade1[3], NomeCidade1[50], Estado2[2], CodCidade2[2], NomeCidade2[50];
+    char Estado1[5], CodCidade1[5], NomeCidade1[50], Estado2[5], CodCidade2[5], NomeCidade2[50];
     int Populacao1,PontosTuristicos1,Populacao2,PontosTuristicos2;
     float PIB1,PIB2,Area1,Area2;
         
@@ -29,13 +29,13 @@ int main(){
 
     printf ("Agora vamos digitar as informações da segunda cidade: \n");
     printf ("Digite o letra do 2o estado: \n");
-    scanf("%s", Estado2);
+    scanf("%s", &Estado2);
 
     printf ("Digite o código da 2a cidade: \n");
-    scanf("%d", &CodCidade2);
+    scanf("%s", &CodCidade2);
 
     printf ("Digite o nome da 2a cidade: \n");
-    scanf("%s", NomeCidade2);
+    scanf("%s", &NomeCidade2);
 
     printf ("Digite a população da 2a cidade: \n");
     scanf("%d", &Populacao2);
